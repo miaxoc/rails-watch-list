@@ -1,6 +1,14 @@
-<div class="container">
-  <h1>Bookmarks#new</h1>
-  <p>Find me in app/views/bookmarks/new.html.erb</p>
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,1),rgba(0,0,0,0.4)), url(https://www.shutterstock.com/image-photo/cinema-blank-wide-screen-people-600nw-2314929885.jpg); width: 100; height: 400px;">
+  <div class="container d-flex justify-content-center">
+    <div>
+      <h1><strong>New bookmark!</strong></h1>
+    </div>
+  </div>
+</div>
+
+
+<div class="container w-50 mt-3">
+  <h1><strong>Add a new bookmark</strong></h1>
 
   <%= simple_form_for [@list, @bookmark] do |f| %>
     <%= f.association :movie %>
