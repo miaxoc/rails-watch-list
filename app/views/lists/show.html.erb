@@ -17,12 +17,12 @@
 
   <div class="d-flex justify-content-between">
     <% @list.bookmarks.each do |bookmark| %>
-      <div class="card" style="width: 14rem;">
+      <div class="card p-2" style="width: 14rem;">
         <%= image_tag(bookmark.movie.poster_url) %>
         <h5><%= bookmark.movie.title %></h5>
         <div>
           <p><%= bookmark.comment%></p>
-          <%= link_to '', bookmark_path(bookmark), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}, class: "fa-solid fa-trash mt-1" %>
+          <%= link_to 'remove bookmark', bookmark_path(bookmark), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} %>
         </div>
       </div>
     <% end %>
