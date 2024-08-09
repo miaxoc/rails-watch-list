@@ -17,7 +17,7 @@
 
   <div class="d-flex justify-content-between">
     <% @list.bookmarks.each do |bookmark| %>
-      <div class="card p-2" style="width: 14rem;">
+      <div class="card p-2 m-2" style="width: 14rem;">
         <%= image_tag(bookmark.movie.poster_url) %>
         <h4><strong><%= bookmark.movie.title %></strong></h4>
         <div>
