@@ -4,16 +4,13 @@
   </div>
 </div>
 
-<%# background: rgb(94,0,0);
-background: linear-gradient(0deg, rgba(94,0,0,1) 0%, rgba(0,0,0,1) 100%); %>
-
 <div class="container w-75">
 
   <div class="d-flex row">
     <% @lists.each do |list| %>
       <div class="card col-4 m-3", style="width: 18rem; height: 10rem; border-radius: 8px;">
+        <%# background image goes here%>
         <h3 class="text-center"><%= link_to list.name, list_path(list), class: "card-title" %></h3>
-
       </div>
     <% end %>
   </div>
