@@ -1,24 +1,47 @@
-# README
+# rails-watch-list
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+App for creating movie watch lists and saving movies within these folders
 
-Things you may want to cover:
 
-* Ruby version
+## Getting Started
+### Setup
 
-* System dependencies
+Install gems
+```
+bundle install
+```
 
-* Configuration
+### ENV Variables
+Create `.env` file
+```
+touch .env
+```
+Inside `.env`, set these variables. For any APIs, see group Slack channel.
+```
+CLOUDINARY_URL=your_own_cloudinary_url_key
+```
 
-* Database creation
+### DB Setup
+```
+rails db:create
+rails db:migrate
+rails db:seed
+```
 
-* Database initialization
+### Run a server
+```
+rails s
+```
 
-* How to run the test suite
+## Built With
+- [Rails 7](https://guides.rubyonrails.org/) - Backend / Front-end
+- [Stimulus JS](https://stimulus.hotwired.dev/) - Front-end JS
+- [Heroku](https://heroku.com/) - Deployment
+- [PostgreSQL](https://www.postgresql.org/) - Database
+- [Bootstrap](https://getbootstrap.com/) — Styling
+- [Figma](https://www.figma.com) — Prototyping
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
 
-* ...
+## License
+This project is licensed under the MIT License
