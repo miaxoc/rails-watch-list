@@ -7,7 +7,7 @@
 </div>
 
 <div class="container w-75">
-  <%= link_to 'create new list', 'lists/new', class: "btn btn-danger mx-2 my-4 text-white" %>
+  <%= link_to 'create new list', 'lists/new', class: "btn btn-danger  my-4 text-white", style: "width: 100%;"%>
   <div class="list-cards col-12">
     <% @lists.each do |list| %>
       <div class="card-category d-flex" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= list.photo.attached? ? cl_image_path(list.photo.key) : image_path('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPQDYau3Hs4-xw1i8jVSUY4BlF4FLmg8lQqg&usqp=CAU') %>')">
